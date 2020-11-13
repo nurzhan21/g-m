@@ -1,0 +1,29 @@
+.header
+     padding-top: 50px
+     padding-bottom: 40px
+     &-block
+          display: flex
+          justify-content: center
+          align-items: center
+          &__mail
+               padding-right: 10px
+               margin-right: 15px
+               border-right: 2px solid #fff
+     &-contacts
+          display: flex
+          align-items: center
+          &__img img
+               width: 18px
+               margin-right: 10px
+          &__number
+               margin-right: 10px
+          
+@media (min-width: 320px) and (max-width: 767px)
+     .header
+          padding: 20px  
+          &-block
+               flex-direction: column 
+               &__mail
+                    margin-bottom: 15px
+ 
+               

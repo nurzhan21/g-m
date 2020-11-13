@@ -1,0 +1,45 @@
+.footer
+     padding: 50px 0
+     &__title
+          +batang
+          margin-bottom: 50px
+          font-size: 30px
+     &-contacts
+          margin-bottom: 80px
+          display: flex
+     &__addr
+          display: flex
+          flex-direction: column
+          margin-right: 70px
+     &__number
+          display: flex
+          flex-direction: column
+          +bold
+          letter-spacing: 0.44px
+     &-block
+          display: flex
+          justify-content: space-around
+          & span
+               flex-basis: 28%
+               & a
+                    display: block
+                    margin-top: 5px
+@media (min-width: 320px) and (max-width: 767px)
+     .footer
+          padding: 25px 0
+          &__title
+               text-align: center
+               margin-bottom: 35px
+          &-contacts
+               display: block
+               margin-left: 40px
+               margin-bottom: 50px
+          &__addr
+               margin-right: 0
+               margin-bottom: 10px
+          &-block
+               justify-content: center
+               flex-direction: column-reverse
+               align-items: center
+               & span a 
+                    text-align: center

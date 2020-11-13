@@ -1,0 +1,56 @@
+.tabs
+.nav-tabs
+     display: flex
+     justify-content: center
+     margin-bottom: 40px
+.nav-tab
+     +batang
+     font-size: 30px
+     text-decoration: none
+     color: #797979
+     &:first-child
+          margin: 0 100px 0 50px
+.nav-tab.active
+     color: #fff
+     cursor: default
+.tab-content
+     display: flex
+     justify-content: center
+     padding: 70px 0 0 0
+     background: url("../img/tabs/tabs-bg.png") center no-repeat
+     background-size: cover
+.tab-pane
+     display: none
+     max-width: 580px
+.tab-pane.active
+     display: flex
+     flex-direction: column
+.tab-pane__title
+     color: #dbdbdb
+     font-size: 16px
+     margin-bottom: 60px
+.tab-pane__list
+     font-size: 20px
+     color: #fff
+     margin-bottom: 25px
+     &::before
+          content: ''
+          display: inline-block
+          width: 30px
+          height: 10px
+          margin-right: 30px
+          background: url("../img/tabs/item.png") center no-repeat   
+
+@media (min-width: 320px) and (max-width: 767px)
+     .nav-tab
+          font-size: 22px
+          &:first-child
+               margin: 0 20px 0 20px
+     .tab-content
+          padding-top: 40px
+     .tab-pane__title
+          margin-bottom: 40px
+     .tab-pane__list
+          font-size: 16px
+          &::before
+             margin-right: 15px  

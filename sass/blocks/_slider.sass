@@ -1,0 +1,50 @@
+.slider
+     padding-top: 150px
+     &-item
+          margin-right: 15px
+          transition: 1s
+          &:hover
+               cursor: pointer
+               transform: scale(1.2)
+          &:focus
+               outline: none
+@media (min-width: 320px) and (max-width: 767px)
+     .slider
+          padding-top: 70px
+          &-item
+               margin-right: 10px
+       
+.slider-overlay
+     position: fixed
+     display: none
+     top: 0
+     width: 100%
+     height: 100%
+     z-index: 3
+     background-color: rgba(0, 0, 0, .6)
+.slider
+     &-popup
+          position: fixed
+          left: 50%
+          top: 25%
+          transform: translateX(-50%)
+          height: 300px
+          width: 300px  
+     &-close
+          position: absolute
+          z-index: 5
+          top: -10%
+          right: -10%
+          font-size: 45px
+          +bold
+          color: $active-color
+          cursor: pointer
+     &-img
+          height: 300px
+          width: 300px     
+@media (min-width: 320px) and (max-width: 767px)
+     .slider
+          &-popup
+               height: 280px
+               width: 280px
+          

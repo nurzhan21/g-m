@@ -1,0 +1,58 @@
+*
+	box-sizing: border-box
+body
+     margin: 0
+     padding: 0
+     font-size: 14px
+     +reg
+     color: $text-color
+     background-color: #0a0a0a
+input, button, img
+	&:focus
+		outline: none
+img
+	max-width: 100%
+a 
+     text-decoration: none
+     color: $text-color
+
+.form
+     display: flex
+     align-items: center
+     justify-content: center
+     &__number
+          min-width: 260px
+          padding: 12px
+          margin-right: 10px
+          +bold
+          background: rgba(255,255,255, .2)
+          color: $text-color
+          border: none
+          border-radius: 3px       
+     &__button
+          padding: 12px 25px
+          background-color: $active-color
+          color: $text-color
+          border: none
+          border-radius: 3px
+          &:hover
+               cursor: pointer
+          
+@media (min-width: 320px) and (max-width: 767px)
+     .form
+          flex-direction: column
+          &__number
+               margin-bottom: 15px
+               margin-right: 0   
+                         
+::-webkit-input-placeholder
+     color: $text-color
+input
+     &:focus::-webkit-input-placeholder 
+          color: transparent
+     &:focus::-moz-placeholder          
+          color: transparent
+     &:focus:-moz-placeholder           
+          color: transparent
+     &:focus:-ms-input-placeholder     
+          color: transparent

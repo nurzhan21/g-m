@@ -1,0 +1,60 @@
+.scheme
+     padding: 100px 0
+     &__title
+          margin-bottom: 70px
+          +batang
+          font-size: 48px
+          text-align: center
+          &::after
+               content: ''
+               display: block
+               margin-top: 15px
+               height: 7px
+               background: url("../img/scheme/line.png") center no-repeat
+     &-wrap
+          display: flex
+          justify-content: space-around
+          align-items: center
+          flex-wrap: nowrap
+          max-width: 1300px
+          margin: 0 auto
+     &-item
+          padding: 45px 15px
+          min-width: 220px
+          min-height: 300px
+          text-align: center
+          background-color: #171717
+          &__number
+               margin-bottom: 10px
+               font-size: 48px
+          &__img
+               margin-bottom: 30px
+          &__text
+               font-size: 20px
+.line
+     margin: 0 25px
+     padding: 0 20px
+     width: 40px
+     height: 2px
+     background-color: $active-color
+
+@media (min-width: 320px) and (max-width: 991px)
+     .scheme
+          padding: 50px 0
+          &__title
+               margin-bottom: 40px
+               font-size: 38px
+          &-wrap
+               flex-direction: column
+          &-item
+               width: 100%
+     .line
+          width: 100px
+@media (min-width: 768px) and (max-width: 991px)
+     .scheme
+          &-wrap
+               flex-direction: column
+          &-item
+               width: 50%
+     .line
+          width: 100px

@@ -1,0 +1,59 @@
+.services
+     padding-bottom: 70px
+     &__title
+          margin-bottom: 60px
+          text-align: center
+          +batang
+          font-size: 48px
+          text-transform: uppercase
+          &::after
+               content: ''
+               display: block
+               margin-top: 15px
+               height: 35px
+               background: url("../img/services/line.png") center no-repeat
+               background-size: contain
+     &-wrap
+          display: flex
+          justify-content: center
+          align-items: flex-start
+          flex-wrap: wrap
+          flex-basis: 33%
+     &-item
+          display: flex
+          justify-content: flex-end
+          flex-direction: column
+          height: 310px
+          width: 350px
+          padding-left: 40px
+          padding-bottom: 30px
+          border: 1px solid rgba(255, 255, 255, 0.2)
+          &:hover
+               background-color: rgba($active-color, .3)
+               cursor: pointer               
+     &__img
+          margin-bottom: 40px
+     &__text
+          +batang
+          font-size: 28px
+          color: $active-color
+
+.services-item:hover
+     .services__text
+          color: $text-color
+.services .services-wrap:hover
+     background: url("../img/services/services-bg.svg") center no-repeat
+     
+@media (min-width: 320px) and (max-width: 767px)
+     .services
+          &__title
+               font-size: 38px
+               margin-bottom: 45px
+          &-item
+               height: 280px
+               padding-left: 0
+               align-items: center          
+@media (min-width: 768px) and (max-width: 991px)
+     .services
+          &-item
+               flex-basis: 50%

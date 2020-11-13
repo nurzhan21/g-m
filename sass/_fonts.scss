@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Avenir-Next-Reg';
+	src: url('../fonts/AvenirNext/AvenirNextCyr-Regular.eot');
+	src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+		url('../fonts/AvenirNext/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNext/AvenirNextCyr-Regular.woff') format('woff'),
+		url('../fonts/AvenirNext/AvenirNextCyr-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir-Next-Bold';
+	src: url('../fonts/AvenirNext/AvenirNextCyr-Bold.eot');
+	src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'),
+		url('../fonts/AvenirNext/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNext/AvenirNextCyr-Bold.woff') format('woff'),
+		url('../fonts/AvenirNext/AvenirNextCyr-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Batang';
+	src: url('../fonts/fonts/Batang/Batang.ttf');
+	src: local('Batang'), local('Batang'),
+		url('../fonts/Batang/Batang.ttf') format('truetype');
+	font-style: normal;
+}
+@mixin reg{
+    font-family: 'Avenir-Next-Reg', sans-serif;
+    font-weight: 400;
+}
+@mixin bold{
+    font-family: 'Avenir-Next-Bold', sans-serif;
+    font-weight: 700;
+}
+@mixin batang{
+	font-family: 'Batang' sans-serif;
+	font-style: normal;
+}

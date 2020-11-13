@@ -1,0 +1,31 @@
+.main
+     &-wrapper
+          padding: 40px 0
+          position: relative
+          z-index: 2
+          background: #393935 url("../img/main/main-bg.png") center no-repeat
+          background-size: cover
+          text-align: center
+     &__logo
+          margin-bottom: 40px
+     &__title
+          max-width: 400px
+          margin: 0 auto
+          margin-bottom: 40px
+          font-size: 48px
+          +batang
+     &-form
+          margin-bottom: 90px
+     &__text
+          max-width: 500px
+          margin: 0 auto
+          letter-spacing: 0.4px
+
+@media (min-width: 320px) and (max-width: 767px)
+     .main
+          &__title
+               font-size: 38px
+          &-form
+               margin-bottom: 60px
+          &__text
+               padding: 15px

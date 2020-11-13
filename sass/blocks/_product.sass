@@ -1,0 +1,39 @@
+.product
+     &-wrapper
+          padding: 140px 0
+          position: relative
+          z-index: 2
+          background: #393935 url("../img/product/product-bg.png") center no-repeat
+          background-size: cover
+     &__title
+          margin: 0 auto
+          max-width: 400px  
+          +batang
+          font-size: 48px 
+          text-align: center
+     &__descrip
+          margin-bottom: 50px
+          max-width: 400px
+          font-size: 16px
+@media (min-width: 320px) and (max-width: 767px)
+     .product
+          &-wrapper
+               padding: 80px 0
+          &__title
+               font-size: 38px
+          &__descrip
+               padding: 15px
+          &__button
+               display: block
+               margin: 0 auto
+            
+@media (min-width: 768px) and (max-width: 991px)
+     .product
+          &__title
+               margin-bottom: 30px
+          &__descrip
+               margin: 0 auto
+               margin-bottom: 30px
+          &__button
+               display: block
+               margin: 0 auto

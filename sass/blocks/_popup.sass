@@ -1,0 +1,78 @@
+.overlay
+     position: fixed
+     display: none
+     top: 0
+     width: 100%
+     height: 100%
+     z-index: 3
+     background-color: rgba(255, 255, 255, .2)
+.popup
+     position: fixed
+     left: 50%
+     top: 50px
+     width: 900px
+     padding: 60px
+     transform: translateX(-50%)
+     background-color: #141414
+     &-close
+          position: absolute
+          top: 40px
+          right: 60px
+          font-size: 45px
+          +bold
+          color: $active-color
+          cursor: pointer
+     &__title
+          margin-bottom: 40px
+          font-size: 36px
+     &__text
+          max-width: 600px
+          text-align: justify
+          margin-bottom: 60px
+          font-size: 16px
+     &__subtitle
+          font-size: 36px
+          margin-bottom: 40px
+     &-form
+          justify-content: flex-start
+@media (min-width: 320px) and (max-width: 767px)
+     .popup
+          left: 50%
+          top: 15px
+          width: 310px
+          padding: 20px
+          transform: translateX(-50%)
+          &-close
+               top: 40px
+               right: 20px
+               font-size: 35px
+          &__title
+               margin-bottom: 10px
+               font-size: 28px
+          &__text
+               max-width: 300px
+               margin-bottom: 20px
+               font-size: 14px
+          &__subtitle
+               font-size: 24px
+               margin-bottom: 20px
+@media (min-width: 768px) and (max-width: 991px)
+     .popup
+          left: 50%
+          top: 35px
+          width: 750px
+          padding: 20px
+          transform: translateX(-50%)
+          &-close
+               top: 40px
+               right: 40px
+          &__title
+               margin-bottom: 20px
+               font-size: 28px
+          &__text
+               max-width: 650px
+               margin-bottom: 20px
+               font-size: 18px
+          &__subtitle
+               font-size: 24px
+               margin-bottom: 20px
